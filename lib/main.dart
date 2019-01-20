@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_json_http/local_json.dart';
+import 'package:flutter_json_http/remote_api.dart';
 
 void main() => runApp(MyApp());
 
@@ -67,6 +68,9 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             RaisedButton(child:Text("Local Json"), color: Colors.green, onPressed: (){
               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LocalJsonKullanimi()));
+            },),
+            RaisedButton(child:Text("Remote Api"), color: Colors.orangeAccent, onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>RemoteApiKullanimi()));
             },),
           ],
         ),
